@@ -15,6 +15,7 @@ public class Reptil extends Animal{
         this.colorEscamas = colorEscamas;
         this.largoCola = largoCola;
         listado.add(this);
+        total++;
     }
 
     public Reptil crearIguana(String nombre, int edad, String genero){
