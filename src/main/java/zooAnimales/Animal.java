@@ -48,6 +48,19 @@ public class Animal {
     public String movimiento(){
         return "Desplazarse";
     }
-
+    public static String totalPorTipo() {
+        return "Mamiferos: "+(Mamifero.cantidadMamiferos())+"\n"+
+                "Aves: "+(Ave.cantidadAves())+ "\n"+
+                "Reptiles: "+(Reptil.cantidadReptiles())+"\n"+
+                "Peces: " +(Pez.cantidadPeces())+ "\n"+
+                "Anfibios: "+(Anfibio.cantidadAnfibios());
+    }
+    public String toString() {
+        if (listado.size() != 0)
+            return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + ", y mi genero es " +
+                    this.genero + ", la zona en la que me ubico es " + this.listado.get(0).getNombre() + ", en el " + this.listado.get(0).getZoo().getNombre();
+        else
+            return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero;
+    }
 
 }
