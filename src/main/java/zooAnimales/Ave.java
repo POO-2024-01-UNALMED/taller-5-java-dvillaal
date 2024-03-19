@@ -5,7 +5,7 @@ import zooAnimales.Animal;
 import java.util.ArrayList;
 
 public class Ave extends Animal {
-    private ArrayList<Ave> listado = new ArrayList<>();
+    private static ArrayList<Ave> listado = new ArrayList<>();
     public static int halcones;
     public static int aguilas;
     private String colorPlumas;
@@ -39,7 +39,7 @@ public class Ave extends Animal {
     }
 
     public static int cantidadAves(){
-        return aguilas + halcones;
+        return listado.size();
     }
 
     public String movimiento(){

@@ -44,6 +44,12 @@ public class Animal {
     public void setGenero(String genero){
         this.genero = genero;
     }
+    public static void setTotalAnimales() {
+        totalAnimales++;
+    }
+    public static int getTotalAnimales() {
+        return Mamifero.cantidadMamiferos()+Ave.cantidadAves()+Reptil.cantidadReptiles()+Pez.cantidadPeces()+Anfibio.cantidadAnfibios();
+    }
 
     public String movimiento(){
         return "Desplazarse";
