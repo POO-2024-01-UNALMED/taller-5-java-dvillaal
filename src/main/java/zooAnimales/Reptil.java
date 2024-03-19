@@ -8,6 +8,8 @@ public class Reptil extends Animal{
     public static int serpientes;
     private String colorEscamas;
     private int largoCola;
+    public static int total;
+
     public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola){
         super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;
@@ -53,7 +55,7 @@ public class Reptil extends Animal{
     }
 
     public static int cantidadReptiles(){
-        return listado.size();
+        return total;
     }
 
     public String movimiento() {
